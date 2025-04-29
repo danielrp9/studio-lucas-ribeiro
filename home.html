@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estúdio Lucas Ribeiro | Arquitetura Contemporânea</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="src/css/widget-flutuante.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-symbol">
+                    <span class="logo-l">L</span>
+                    <span class="logo-dot"></span>
+                    <span class="logo-r">R</span>
+                </div>
+                <span class="logo-text">ESTÚDIO LUCAS RIBEIRO</span>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#processo">Processo</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+                <div class="menu-mobile">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h1 class="animate-on-scroll">ARQUITETURA<br>QUE INSPIRA</h1>
+            <p class="animate-on-scroll">Design minimalista com funcionalidade contemporânea</p>
+            <a href="#projetos" class="btn animate-on-scroll">VER PROJETOS</a>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <section id="sobre" class="about">
+        <div class="container">
+            <div class="about-content">
+                <h2 class="section-title animate-on-scroll">SOBRE O ESTÚDIO</h2>
+                <div class="about-text animate-on-scroll">
+                    <p>O Estúdio Lucas Ribeiro é especializado em arquitetura contemporânea, combinando formas geométricas precisas com funcionalidade inovadora. Nossa abordagem minimalista reflete a essência do design arquitetônico moderno.</p>
+                    <p>Cada projeto é tratado como uma obra única, onde a simplicidade da forma transmite clareza e sofisticação, características fundamentais para espaços que inspiram.</p>
+                </div>
+                <div class="about-highlight animate-on-scroll">
+                    <div class="highlight-item">
+                        <span class="highlight-number">10+</span>
+                        <span class="highlight-text">Anos de experiência</span>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-number">50+</span>
+                        <span class="highlight-text">Projetos realizados</span>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-number">100%</span>
+                        <span class="highlight-text">Foco no cliente</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image animate-on-scroll">
+                <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Arquitetura moderna">
+            </div>
+        </div>
+    </section>
+
+
+<section id="projetos" class="projects">
+    <div class="container">
+        <h2 class="section-title animate-on-scroll">PROJETOS RECENTES</h2>
+        <p class="section-subtitle animate-on-scroll">Cada obra começa com uma ideia, um ponto no papel</p>
+        
+        <div class="projects-grid">
+            <div class="project-item animate-on-scroll">
+                <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Projeto Residencial">
+                <div class="project-info">
+                    <h3>RESIDENCIAL VILA NOVA</h3>
+                    <p>Design minimalista com integração de espaços internos e externos</p>
+                    <a href="src/html/projetos.html" class="project-link" data-project="residencial">Ver detalhes</a>
+                </div>
+            </div>
+            
+            <div class="project-item animate-on-scroll">
+                <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Projeto Comercial">
+                <div class="project-info">
+                    <h3>ESPAÇO COMERCIAL 45</h3>
+                    <p>Ambiente corporativo com foco em produtividade e bem-estar</p>
+                    <a href="projeto-comercial.html" class="project-link" data-project="comercial">Ver detalhes</a>
+                </div>
+            </div>
+            
+            <div class="project-item animate-on-scroll">
+                <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Projeto de Interiores">
+                <div class="project-info">
+                    <h3>INTERIORES MODERNOS</h3>
+                    <p>Mobiliário customizado e integração de elementos naturais</p>
+                    <a href="projeto-interiores.html" class="project-link" data-project="interiores">Ver detalhes</a>
+                </div>
+            </div>
+        </div>
+        
+        <a href="todos-projetos.html" class="btn btn-outline animate-on-scroll">VER TODOS OS PROJETOS</a>
+    </div>
+
+    <!-- Overlay que será mostrado quando clicar em um projeto -->
+    <div class="project-overlay" id="projectOverlay">
+        <div class="project-overlay-content">
+            <button class="close-overlay">&times;</button>
+            <div class="overlay-loader">
+                <div class="loader"></div>
+                <p>Carregando projeto...</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="processo" class="process">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">NOSSO PROCESSO</h2>
+            <p class="section-subtitle animate-on-scroll">Da concepção à realização</p>
+            
+            <div class="process-steps">
+                <div class="step animate-on-scroll">
+                    <div class="step-number">1</div>
+                    <h3>CONCEPÇÃO</h3>
+                    <p>Entendimento das necessidades do cliente e desenvolvimento do conceito inicial</p>
+                </div>
+                
+                <div class="step animate-on-scroll">
+                    <div class="step-number">2</div>
+                    <h3>DESENVOLVIMENTO</h3>
+                    <p>Criação de plantas, elevações e modelos 3D para visualização do projeto</p>
+                </div>
+                
+                <div class="step animate-on-scroll">
+                    <div class="step-number">3</div>
+                    <h3>EXECUÇÃO</h3>
+                    <p>Acompanhamento da obra para garantir fidelidade ao projeto original</p>
+                </div>
+                
+                <div class="step animate-on-scroll">
+                    <div class="step-number">4</div>
+                    <h3>ENTREGA</h3>
+                    <p>Finalização com atenção aos detalhes e satisfação do cliente</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contact">
+        <div class="container">
+            <div class="contact-content animate-on-scroll">
+                <h2 class="section-title">VAMOS CONVERSAR</h2>
+                <p>Entre em contato para discutir seu próximo projeto arquitetônico</p>
+                
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Nome" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Assunto">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Mensagem" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">ENVIAR MENSAGEM</button>
+                </form>
+            </div>
+            
+            <div class="contact-info animate-on-scroll">
+                <h3>INFORMAÇÕES DE CONTATO</h3>
+                <ul>
+                    <li>
+                        <span>Endereço:</span>
+                        <p>Rua da Arquitetura, 123 - São Paulo/SP</p>
+                    </li>
+                    <li>
+                        <span>Telefone:</span>
+                        <p>+55 11 98765-4321</p>
+                    </li>
+                    <li>
+                        <span>Email:</span>
+                        <p>contato@estudiolucasribeiro.com</p>
+                    </li>
+                    <li>
+                        <span>Horário:</span>
+                        <p>Seg-Sex: 9h às 18h</p>
+                    </li>
+                </ul>
+                
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">
+                <div class="logo-symbol">
+                    <span class="logo-l">L</span>
+                    <span class="logo-dot"></span>
+                    <span class="logo-r">R</span>
+                </div>
+                <span class="logo-text">ESTÚDIO LUCAS RIBEIRO</span>
+            </div>
+            
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#processo">Processo</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-copyright">
+                <p>&copy; 2023 Estúdio Lucas Ribeiro. Todos os direitos reservados.</p>
+                <p>Design por agênciaFATTO</p>
+            </div>
+        </div>
+    </footer>
+
+<!-- Widget de Chat Flutuante com Avatar Feminino -->
+<div class="chat-widget">
+    <div class="chat-icon" id="chatIcon">
+        <div class="chat-avatar">
+            <img src="src/img/avatar.png" alt="Atendente Camila">
+        </div>
+    </div>
+    <div class="chat-container" id="chatContainer">
+        <div class="chat-header">
+            <div class="header-profile">
+                
+                <div>
+                    <h3>Camila</h3>
+                    <p>Atendente</p>
+                </div>
+            </div>
+            <button class="close-chat" id="closeChat">&times;</button>
+        </div>
+        <div class="chat-body" id="chatBody">
+            <!-- Mensagens serão inseridas aqui dinamicamente -->
+        </div>
+        <div class="chat-input" id="chatInput">
+            <input type="text" id="userInput" placeholder="Digite sua mensagem...">
+            <button id="sendMessage">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="src/js/script.js"></script>
+    <script src="src/js/widget-flutuante.js"></script>
+</body>
+</html>
